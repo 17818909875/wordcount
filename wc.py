@@ -4,7 +4,7 @@ class wc:
 	def __init__(self):
 		try:
 			self.task=sys.argv[1][1:]
-			self.file=open(sys.argv[2],'r')
+			self.file=open(sys.argv[2],'r',encoding='UTF-8')
 		except:
 			print('输入参数有误，程序退出')
 			exit()
